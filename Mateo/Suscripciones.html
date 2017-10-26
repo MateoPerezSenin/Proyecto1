@@ -1,9 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Suscripciones</title>
+<meta charset="utf-8">
+<meta author="Mateo Pérez Senín">
+<meta description="Página para suscribirte al periodico">
+<style type="text/css">
+	h1{
+		color: blue;
+		text-align: center;
+		font-size: 5em;
+	}
+	legend{
+		text-align: center;
+		font-size: 5em;
+		color: blue;
+
+	}
+	
+</style>
+
 </head>
 <body>
+
+<form>
+	<fieldset>
+		<legend>Suscríbete</legend>
+
+	<label for="txtNombre" >Nombre y apellidos</label><input type="text" name="txtNombre" id="txtNombre" required>
+<br>
+	<label for="txtFecha" >Fecha de nacimiento</label><input type="date" name="txtFecha" id="txtFecha" required>
+	<br>
+	<label for="txtEmail" >Gmail</label><input type="email" name="txtEmail" id="txtEmail" required>
+<br>
+	<label for="txtDireccion" >Dirección</label><input type="text" name="txtDireccion" id="txtDireccion" required>
+<br>
+	<label for="txtProvincia" >Provincia</label><input type="text" name="txtProvincia" id="txtProvincia" required>
+<br>
+	<label for="txtTelefono" >Teléfono</label><input type="telephone" name="txtTelefono" id="txtTelefono" required>
+<br>	
+	<label for="txtCuenta" >Cuenta</label><input type="num" name="txtCuenta" id="txtCuenta" required>
+<br>
+	<label>Tipo de suscripción</label>
+	<br>
+		<input type="radio" name="sus"><label>1 mes</label>
+		<br>
+		<input type="radio" name="sus"><label>3 meses</label>
+		<br>
+		<input type="radio" name="sus"><label>6 meses</label>
+<br>
+<input type="submit" name="Enviar">
+</fieldset>
+
+</form>
 
 </body>
 </html>
